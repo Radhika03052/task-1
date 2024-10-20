@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/1567736.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e4d7d6;
+            font-weight: bold;
+            font-size: 30px;
+            background-color: #a83434;
+            border-radius: 19px;
+            padding: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color:rgb(207, 86, 62);
+            display: flex;
+            justify-content: center;
+        }
+
+        h3 {
+            color: rgb(190, 130, 46);
+            margin: 30px;
+            margin-top: 100px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .button {
+            margin-top: 35px;
+        }
+
+        .button input {
+            border: none;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            background-color: #dc40f4;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button input:hover {
+            background-color: #26f26d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>WELCOME TO BLOOD GROUP IDENTIFICATION GROUP!!!</h1>
+    </div>
+    <p>
+    <h3>Blood group identification aims to develop a reliable system that can identify and classify human blood groups,
+        ensuring compatibility and reducing the risk of transfusion-related complications.</h3>
+    </p>
+    <div class="box">
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="{% url 'signup' %}"><i class="fas fa-user-plus"></i> Signup</a></li>
+            </ul>
+        </nav>
+</body>
+
+</html>
